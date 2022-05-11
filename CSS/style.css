@@ -1,0 +1,368 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    color: #333;
+}
+.bosluk{
+    width: 1px;
+    height: 1000px;
+}
+/* header */
+
+header{
+    width: 100%;
+    height: 70px;
+    background-color: #12191b;
+    opacity: .7;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+header .logo{
+    width: 30%;
+    margin-left: 5%;
+}
+header .logo h1 span{
+    color: yellow;
+}
+
+header .menuBar{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+header .menuBar a{
+    margin-right: 30px;
+    text-decoration: none;
+    color: initial;
+    color: white;
+    transition: .2s;
+}
+header .menuBar a:hover{
+    border-bottom: 2px solid #f0ad4e;
+}
+
+/* header */
+
+
+/* container kısmı*/
+
+.container{
+    background-image: url('../img/bg-1.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+    height: 100vh;
+    padding-top: 200px ;
+    width: 100%;
+}
+
+.container::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,.5 );
+}
+/* container kısmı*/
+
+
+
+/* Main kısım */
+
+main{
+    margin: 0 auto;
+    width: 500px;
+    padding: 40px 5px;
+    text-align: center;
+    position: relative;
+}
+
+main h1 , main p , main a{
+    margin:50px auto;
+    color: white;
+}
+main a{
+    background-color: #0275d8;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: .3s all ease;
+}
+main a:hover{
+    background-color: white;
+    color: #0275d8;
+}
+main p{
+    line-height:30px;
+}
+
+/* Main kısım */
+
+/* section kısım */
+
+section{
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+section .kart{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 20%;
+}
+section .kart i{
+    color: #0275d8;
+}
+section .kart *{
+    margin: 10px 0;
+}
+/* section kısım */
+
+
+/* container2 kısım */
+
+.container2{
+    width: 100%;
+    height: 50vh;
+    background-color: #292b2c;
+    display: flex;
+    flex-direction: row;
+}
+.container2 .img{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+.img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.content{
+    width: 50%;
+    padding:50px;
+    text-align: left;
+}
+.content a{
+    background-color: #0275d8;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: .3s all ease;
+    width: 120px;
+}
+.content a:hover{
+    background-color: white;
+    color: #0275d8;
+}
+.content * {
+    margin: 35px 0;
+    color: white;
+}
+/* container2 kısım */
+
+/* galeri kısım */
+.gallery{
+    width: 100%;
+    padding: 30px 0;
+    text-align: center;
+}
+.gallery h1 , .gallery p{
+    margin: 30px 0;
+}
+.gallery .photos{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.gallery .photos img{
+    width: 24%;
+    margin-bottom: 30px;
+    opacity: .8;
+    transition: .5s all ease-in;
+}
+.gallery .photos img:hover{
+    opacity: 1;
+}
+/* galeri kısım */
+
+/* container2-2 kısım */
+
+.container2-2{
+    background-color:#0275d8 ;
+}
+.container2-2 .content a{
+    background-color: white;
+    color: #0275d8;
+    border: 1px solid #0275d8;
+}
+.container2-2 .content a:hover{
+    color: white;
+    background-color: #0275d8;
+    border-color: white;
+}
+
+/* container2-2 kısım */
+
+
+/* rooms kısım */
+
+.rooms{
+    width: 100%;
+    padding-top: 50px;
+}
+.rooms .room-content{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.rooms .roomGallery{
+    display: flex;
+    justify-content: space-evenly;
+}
+.rooms .roomGallery .room-card{
+    width: 30%;
+    height: 400px;
+    background-color: #292b2c;
+}
+.rooms .roomGallery .room-card img{
+    width: 100%;
+    height:50% ;
+    object-fit: cover;
+    filter: blur(3px);
+    transition: .5s all ease-in;
+}
+.rooms .roomGallery .room-card img:hover {
+    filter: blur(0);
+}
+.rooms .roomGallery .room-card .room-text{
+    text-align: center;
+    width: 100%;
+    padding-top: 40px;
+    color: white;
+}
+.rooms .roomGallery .room-card .room-text *{
+    margin-top: 20px;
+}
+
+
+/* rooms kısım */
+
+
+.team{
+    background-color: #F8F9FA;
+    width: 100%;
+    padding: 20px 0;
+    margin:50px 0
+}
+.team .team-content , .team-content *{
+    margin-bottom: 30px;
+    text-align: center;
+}
+.team .team-content h1{
+    font-size: 50px;
+}
+.team .team-img{
+    display: flex;
+    justify-content: space-around;
+}
+.team .team-img .team-img-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+    text-align: center;
+}
+.team .team-img .team-img-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5%;
+    transition: .2s all ease-in;
+    filter: brightness(.8);
+}
+.team .team-img .team-img-card img:hover{
+    filter: brightness(1);
+}
+.team .team-img .team-img-card *{
+    margin-bottom:10px ;
+}
+
+/* contact kısım */
+
+.contact{
+    width: 100%;
+    padding: 20px 5px;
+    display: flex;
+}
+
+.contact .contact-img{
+    width: 50%;
+}
+.contact .contact-img img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.contact .contact-form{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 10px;
+}
+.contact .contact-form h1{
+    font-size: 60px;
+}
+.contact .contact-form form{
+    width: 100%;
+}
+.contact .contact-form .form-item{
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+    width: 100% !important;
+}
+.contact .contact-form .form-item input{
+    padding: 10px 2px;
+    margin-top: 10px;
+}
+.contact .contact-form .form-item label{
+    font-size: 30px;
+}
+.contact .contact-form button{
+    padding: 8px 40px;
+    background-color: yellow;
+    border: 1px solid yellow;
+    color: #292b2c;
+    font-size: 18px;
+    transition: .5s all ease;
+}
+.contact .contact-form button:hover{
+    background-color: #292b2c;
+    color: rgb(153, 255, 0);
+}
+/* contact kısım */
